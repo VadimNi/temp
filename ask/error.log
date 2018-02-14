@@ -1,0 +1,83 @@
+[2018-02-14 07:48:23 +0000] [2272] [DEBUG] Current configuration:
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fe4496d52f0>
+  worker_tmp_dir: None
+  limit_request_fields: 100
+  errorlog: error.log
+  logconfig: None
+  reload: False
+  on_starting: <function OnStarting.on_starting at 0x7fe4496c9730>
+  raw_env: []
+  umask: 0
+  pythonpath: None
+  backlog: 2048
+  on_exit: <function OnExit.on_exit at 0x7fe4496d5bf8>
+  bind: ['0.0.0.0:8000']
+  certfile: None
+  ssl_version: 3
+  ca_certs: None
+  threads: 1
+  accesslog: acc.log
+  syslog: False
+  statsd_prefix: 
+  max_requests: 0
+  limit_request_line: 4094
+  capture_output: False
+  when_ready: <function WhenReady.when_ready at 0x7fe4496c9a60>
+  post_fork: <function Postfork.post_fork at 0x7fe4496c9d90>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fe4496d58c8>
+  statsd_host: None
+  proxy_protocol: False
+  cert_reqs: 0
+  proc_name: None
+  keepalive: 2
+  limit_request_field_size: 8190
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fe4496c9f28>
+  chdir: /home/box/web/ask
+  worker_int: <function WorkerInt.worker_int at 0x7fe4496d5158>
+  paste: None
+  config: None
+  timeout: 30
+  spew: False
+  syslog_prefix: None
+  pidfile: None
+  workers: 1
+  worker_class: sync
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  logger_class: gunicorn.glogging.Logger
+  worker_connections: 1000
+  sendfile: None
+  user: 0
+  tmp_upload_dir: None
+  proxy_allow_ips: ['127.0.0.1']
+  django_settings: None
+  on_reload: <function OnReload.on_reload at 0x7fe4496c98c8>
+  max_requests_jitter: 0
+  preload_app: False
+  daemon: True
+  keyfile: None
+  pre_exec: <function PreExec.pre_exec at 0x7fe4496d5488>
+  enable_stdio_inheritance: False
+  group: 0
+  post_request: <function PostRequest.post_request at 0x7fe4496d5730>
+  secure_scheme_headers: {'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-SSL': 'on'}
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fe4496d5a60>
+  forwarded_allow_ips: ['127.0.0.1']
+  graceful_timeout: 30
+  loglevel: debug
+  syslog_addr: udp://localhost:514
+  pre_fork: <function Prefork.pre_fork at 0x7fe4496c9bf8>
+  pre_request: <function PreRequest.pre_request at 0x7fe4496d5620>
+  default_proc_name: ask.wsgi
+  check_config: False
+  syslog_facility: user
+[2018-02-14 07:48:23 +0000] [2272] [INFO] Starting gunicorn 19.6.0
+[2018-02-14 07:48:23 +0000] [2272] [DEBUG] Arbiter booted
+[2018-02-14 07:48:23 +0000] [2272] [INFO] Listening at: http://0.0.0.0:8000 (2272)
+[2018-02-14 07:48:23 +0000] [2272] [INFO] Using worker: sync
+[2018-02-14 07:48:23 +0000] [2275] [INFO] Booting worker with pid: 2275
+[2018-02-14 07:48:23 +0000] [2272] [DEBUG] 1 workers
+[2018-02-14 07:48:41 +0000] [2275] [DEBUG] GET /ask/
+[2018-02-14 07:48:42 +0000] [2275] [DEBUG] POST /ask/
